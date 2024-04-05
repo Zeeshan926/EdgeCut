@@ -1,0 +1,38 @@
+﻿@page
+@model EdgeCut.Pages.Forms.OrdersModel
+@{
+}
+<h3>Orders</h3>
+
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                FurnitureName
+            </th>
+            <th>
+                BasePrice
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model.FurnitureOrders)
+        {
+            <tr>
+                <td>
+                    @order.Id
+                </td>
+                <td>
+                    @order.FurnitureName
+                </td>
+                <td>
+                    @order.BasePrice
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

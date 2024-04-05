@@ -1,0 +1,30 @@
+﻿@page
+@model EdgeCut.Pages.Forms.CustomFurnitureModel
+@{
+}
+
+<div class="text-center container">
+    <h1>Create Your Own Furniture!</h1>
+    <form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 pb-5 rounded-5 alert-light col-4">
+        <input type="text" asp-for="furniture.furnitureName"
+               placeholder="Give Your Furniture a Name..." />
+        <br /><br />
+        <input type="checkbox" asp-for="furniture.brownChairDesign"
+               placeholder="brownChairDesign" />Brown Chair Design
+        <br /><br />
+        <input type="checkbox" asp-for="furniture.doubleBedDesign"
+               placeholder="doubleBedDesign" />Double Bed Design
+        <br /><br />
+        <input type="checkbox" asp-for="furniture.houseChairDesign"
+               placeholder="houseChairDesign" />House Chair Design
+        <br /><br />
+        <input type="checkbox" asp-for="furniture.brownTableDesign"
+               placeholder="brownTableDesign" />Brown Table Design
+        <br /><br />
+        <input type="checkbox" asp-for="furniture.blueChairDesign"
+               placeholder="blueChairDesign" />Blue Chair Design
+        <br /><br />
+        
+        <button  class="btn btn-primary mt-1" type="submit">Order My Furniture</button>
+    </form>
+</div>
